@@ -1,0 +1,50 @@
+.root {
+  margin: 30px auto;
+  width: 500px;
+}
+
+li.comleted {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.filter {
+  color: red;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.filter.active {
+  font-weight: 600;
+  color: #5f0f0f;
+}
+
+#pagingcontainer a {
+  margin-right: 5px;
+}
+
+.button-sort {
+  width: 50px;
+  position: relative;
+}
+
+.button-sort::after {
+  content: '\02193';
+  position: absolute;
+  top: 50%;
+  right: 3px;
+  transform: translateY(-50%);
+}
+
+.button-sort.up::after {
+  content: '\2191'
+}
+
+.page {
+  text-decoration: none;
+  color: #000;
+}
+
+.page.active {
+  color: lightseagreen;
+}
